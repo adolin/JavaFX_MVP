@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.PersonController"
+      prefHeight="400.0" prefWidth="600.0" spacing="5">
+    <BorderPane.margin>
+        <Insets bottom="0" left="5.0" right="0" top="20.0" />
+    </BorderPane.margin>
+    <Label fx:id="firstName"></Label>
+    <Label fx:id="lastName"></Label>
+</VBox>

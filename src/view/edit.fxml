@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane fx:controller="controller.EditController" xmlns:fx="http://javafx.com/fxml/1" hgap="5" vgap="5">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="NEVER"/>
+        <ColumnConstraints halignment="LEFT" hgrow="ALWAYS"/>
+    </columnConstraints>
+
+    <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <TextField fx:id="firstNameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Button fx:id="changeNameButton"  GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#changeName">Change name</Button>
+    <padding>
+        <Insets top="10" left="10" right="10" bottom="10"/>
+    </padding>
+
+</GridPane>

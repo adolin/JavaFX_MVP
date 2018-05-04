@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.LoginController"
+      prefHeight="400.0" prefWidth="600.0"
+>
+    <VBox alignment="CENTER" spacing="10">
+        <VBox.margin>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+        </VBox.margin>
+        <Label>First Name</Label>
+        <TextField fx:id="firstNameField"></TextField>
+        <Label>Last Name</Label>
+        <TextField fx:id="lastNameField"></TextField>
+        <Button fx:id="enterButton" onAction="#login">Enter</Button>
+    </VBox>
+</VBox>
